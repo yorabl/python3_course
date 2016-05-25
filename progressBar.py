@@ -8,7 +8,7 @@ def progress_bar(width, total, completed):
     tags = width * ratio
     tags = int(tags)
     s = '#' * tags + '-' * (width - tags)
-
+    print('{} {} '.format(tags, ratio))
     return s
     # --------- YOUR CODE HERE --------------
 
