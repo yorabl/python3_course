@@ -1,11 +1,10 @@
 def checkIp(str):
     result = True
-    ip = str.split('.')
-    print(ip)
-    if len(ip) != 4:
+
+    if len(str.split('.')) != 4:
         result = False
     else:
-        for i in ip:
+        for i in str.split('.'):
             if result and i.isdigit() and (-1 < int(i) < 256):
                 continue
             else:
@@ -14,5 +13,5 @@ def checkIp(str):
     return result
 
 print(checkIp('10.35.160.133'))
-print(checkIp('300.250.3.2'))
+print(checkIp('100.250.3.8'))
 print(checkIp('yogev rabl'))
