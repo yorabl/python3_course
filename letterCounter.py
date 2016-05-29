@@ -9,7 +9,7 @@ def letter_counter(s):
     letter).
     """
     # --- WRITE YOUR CODE HERE --- #
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
     d = {}
     for i in s:
         if i.isalpha():
