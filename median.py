@@ -1,8 +1,8 @@
 def median(data):
     length = len(data)
 
-    if (length % 2):
-        tmp = (length // 2 )
+    if length % 2:
+        tmp = (length // 2)
         middle = sorted(data)[tmp]
     else:
         tmp = length // 2
