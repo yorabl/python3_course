@@ -11,13 +11,9 @@ def letter_counter(s):
     # --- WRITE YOUR CODE HERE --- #
 
     d = {}
-    for i in s:
+    for i in s.lower():
         if i.isalpha():
-            if i.lower() in d:
-                d[i.lower()] += 1
-            else:
-                d[i.lower()] = 1
-    print(d)
+            d[i] = d.get(i, 0) + 1
     return d
     # ---------------------------- #
 
