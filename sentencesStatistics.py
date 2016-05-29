@@ -1,8 +1,6 @@
 def word_lengths(s):
     # ==== YOUR CODE HERE ===
-    l = []
-    [l.append(len(i)) for i in s.split()]
-    return l
+    return [len(i) for i in s.split()]
     # =======================
 
 
