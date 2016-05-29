@@ -1,10 +1,7 @@
 def graph(data):
-    max_num = 0
+
     for i in data:
-        if i > max_num:
-            max_num = i
-    for i in data:
-        if i == max_num:
+        if i == max(data):
             print('*' * i)
         else:
             print('=' * i)
