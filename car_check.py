@@ -1,4 +1,6 @@
 from collections import OrderedDict
+
+
 class Report:
     def __init__(self, plate_id):
         self.plate_id = plate_id
@@ -11,6 +13,7 @@ class Report:
         return all(self.car_parts.values())\
 
     def render(self):
+
         report = '\nResults for car #{}\n'.format(self.plate_id)
         for test_name in self.car_parts:
             if self.car_parts[test_name]:
